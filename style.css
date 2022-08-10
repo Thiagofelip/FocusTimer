@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --font-p: 'Roboto', sans-serif;
+
+  --color-unselect: #E1E1E6;
+  --color-select: #02799D;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-p);
+}
+
+/*Stopwatch*/
+
+#project-wrapper {
+  height: 100vh;
+
+  display: flex;
+  gap: 19.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#stopwatch-display {
+  display: flex;
+
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+
+  margin-bottom: 2.8rem;
+}
+
+#stopwatch-buttons {
+  display: flex;
+  gap: 4.0rem;
+
+}
+
+#card-wrapper {
+  display: grid;
+  grid-template-areas: "A B" "C D";
+  gap: 3.2rem;
+}
+
+#start{
+  cursor: pointer;
+}
+
+#stop {
+  cursor: pointer;
+}
+
+#most {
+  cursor: pointer;
+}
+
+#less {
+  cursor: pointer;
+}
+
+/*ambient sound*/ 
+
+.cards {
+  width: 13.8rem;
+  height: 15.2rem;
+  background-color: var(--color-unselect);
+
+  border-radius: 24px;
+  padding: 4.8rem 4.2rem;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.select {
+  background-color: var(--color-select);
+}
+
+.select svg path{
+  fill: white;
+}
+
+.hiden {
+  display: hide;
+}
